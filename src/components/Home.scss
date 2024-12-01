@@ -56,14 +56,23 @@
     margin: 0;
     font-size: 1.5rem;
   }
+  a {
+    color: #0066cc;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    font-family: "SF-Mono", "Roboto Mono", monospace;
+  }
 }
 
 .linkSection {
+  margin-bottom: 30px;
   a {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
     font-size: 2rem;
+    animation: flash 1s infinite;
     &:hover {
       color: #ff4500;
     }
@@ -117,5 +126,17 @@
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
   }
 }

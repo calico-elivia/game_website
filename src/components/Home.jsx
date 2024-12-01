@@ -14,14 +14,30 @@ const Home = () => {
       <div className="cardWrap">
         <div className="tokenCard">
           <h4>AntiToken ($ANTI)</h4>
-          <p>Address:</p>
+          <p>
+            Address:
+            <a
+              href="https://pump.fun/coin/EiCWHxvDSYxq7w3aWyqB3MrNAPM4RKQWvUdmfzXspump"
+              target="_blank"
+              rel="noreferrer"
+            >
+              EiCWH...spump
+            </a>
+          </p>
           <p>Track on:</p>
+          <a
+            href="https://pump.fun/coin/EiCWHxvDSYxq7w3aWyqB3MrNAPM4RKQWvUdmfzXspump"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Pump.fun
+          </a>
         </div>
-        <div className="tokenCard">
+        {/* <div className="tokenCard">
           <h4>ProToken ($PRO)</h4>
           <p>Address:</p>
           <p>Track on:</p>
-        </div>
+        </div> */}
       </div>
       <div className="linkSection">
         <Link to="/roadmap">See Roadmap</Link>
